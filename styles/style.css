@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+select {
+    width: 300px;
+    overflow: hidden;
+}
+
+#home {
+    font-size:large;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border: 3px solid black;
+}
