@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Score Predictor</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/regression"></script>
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <div id="home">
+            <h1>Home</h1>
+            <p>
+                Welcome to the SAT score predictor. To begin, please let me know how many practice test scores you would like to enter.
+            </p>
+            <input type="number" id="numTests" min="0" oninput="validity.valid||(value='');">
+            <br>
+            <input type="submit" onclick=scorePredictor()>
+        </div>
+    </body>
+</html>
