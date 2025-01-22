@@ -143,6 +143,13 @@ function scorePredictor() {
         if (predictedReadScore > 800) {
             predictedReadScore = 800
         }
+        if (predictedMathScore < 200) {
+            predictedMathScore = 200
+        }
+        if (predictedReadScore < 200) {
+            predictedReadScore = 200
+        }
+
         predictedTotalScore = predictedMathScore + predictedReadScore
 
         document.getElementById('home').innerHTML = 
@@ -151,5 +158,10 @@ function scorePredictor() {
         <p>Your predicted reading score is ${Math.round(predictedReadScore)}.</p>
         <p>Your predicted total score is ${Math.round(predictedTotalScore)}</p>`
     }
-    updateContent();
+    if (numPracTests === "") {
+        alert("Please enter in a value.")
+    }
+    else {
+        updateContent();
+    }
 }
